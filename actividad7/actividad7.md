@@ -18,14 +18,15 @@ El funcionamiento del CFS se puede resumir en los siguientes pasos:
 7.	Se repiten los pasos 1 a 6 para el siguiente proceso a ejecutar.
 
 ## El CFS utiliza una serie de técnicas para optimizar su rendimiento, incluyendo:
-●	Búsqueda binaria: Se utiliza una búsqueda binaria para encontrar rápidamente el proceso con el menor tiempo de espera en el árbol rojo-negro.
-●	Actualizaciones incrementales: Cuando se modifica el tiempo de espera de un proceso, se actualiza el árbol rojo-negro de manera incremental, minimizando la sobrecarga de la operación.
-●	Reciclaje de nodos: Los nodos del árbol rojo-negro se reciclan cuando ya no son necesarios, lo que ayuda a reducir el consumo de memoria.
+1. Búsqueda binaria: Se utiliza una búsqueda binaria para encontrar rápidamente el proceso con el menor tiempo de espera en el árbol rojo-negro.
+2. Actualizaciones incrementales: Cuando se modifica el tiempo de espera de un proceso, se actualiza el árbol rojo-negro de manera incremental, minimizando la sobrecarga de la operación.
+3. Reciclaje de nodos: Los nodos del árbol rojo-negro se reciclan cuando ya no son necesarios, lo que ayuda a reducir el consumo de memoria.
 
 ## Beneficios del CFS
 El CFS ofrece una serie de beneficios sobre los planificadores anteriores, incluyendo:
-●	Mayor equidad: CFS garantiza que todos los procesos reciban una cantidad justa de tiempo de CPU, independientemente de su prioridad o consumo de recursos.
-●	Mejor rendimiento: CFS es un algoritmo eficiente que puede manejar cargas de trabajo complejas con un impacto mínimo en el rendimiento del sistema.
-●	Mayor escalabilidad: CFS se puede escalar para manejar un gran número de procesos sin comprometer su rendimiento o equidad.
-●	Mayor flexibilidad: CFS es un algoritmo flexible que se puede adaptar a una amplia gama de cargas de trabajo.
+1. Mayor equidad: CFS garantiza que todos los procesos reciban una cantidad justa de tiempo de CPU, independientemente de su prioridad o consumo de recursos.
+2. Mejor rendimiento: CFS es un algoritmo eficiente que puede manejar cargas de trabajo complejas con un impacto mínimo en el rendimiento del sistema.
+3. Mayor escalabilidad: CFS se puede escalar para manejar un gran número de procesos sin comprometer su rendimiento o equidad.
+4. Mayor flexibilidad: CFS es un algoritmo flexible que se puede adaptar a una amplia gama de cargas de trabajo.
+# 
 En general, el CFS es un algoritmo de planificación de procesos moderno y eficiente que ofrece una serie de beneficios sobre los planificadores anteriores. Es la opción predeterminada para la planificación de procesos en la mayoría de las distribuciones de Linux modernas.
